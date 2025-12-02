@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Allu Mahesh - South Indian™ | IPL 40/40 Match Pass</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;}
+
+    body{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:18px;
+      background:#020617;
+      background-image:
+        radial-gradient(circle at 0% 0%,rgba(56,189,248,0.25),transparent 55%),
+        radial-gradient(circle at 100% 100%,rgba(34,197,94,0.22),transparent 55%);
+      color:#e5e7eb;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:420px;
+    }
+
+    .tg-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:10px;
+    }
+    .tg-head-left{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      color:#9ca3af;
+      font-size:13px;
+    }
+    .signal-dot{
+      width:7px;height:7px;border-radius:50%;
+      background:#22c55e;
+      box-shadow:0 0 0 4px rgba(34,197,94,0.45);
+    }
+    .tg-logo{
+      width:22px;
+      height:22px;
+      border-radius:6px;
+      background:linear-gradient(135deg,#27a7e7,#0ea5e9);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:13px;
+    }
+
+    .card{
+      background:rgba(15,23,42,0.96);
+      border-radius:24px;
+      border:1px solid rgba(148,163,184,0.5);
+      box-shadow:0 22px 60px rgba(15,23,42,0.9);
+      padding:18px 16px 20px;
+      backdrop-filter:blur(20px);
+    }
+
+    .profile-row{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .avatar-ring{
+      width:66px;height:66px;
+      border-radius:50%;
+      padding:2px;
+      background:conic-gradient(from 210deg,#38bdf8,#22c55e,#facc15,#38bdf8);
+    }
+    .avatar{
+      width:100%;height:100%;
+      border-radius:50%;
+      background:#020617 url("https://assets.zyrosite.com/xRbO5Wp1qY1JjnO1/img_20251202_191956_454-AY9IjXszDt567dRL.jpg") center/cover no-repeat;
+      border:2px solid #020617;
+    }
+
+    .profile-info h1{
+      font-size:18px;
+      font-weight:700;
+      letter-spacing:0.02em;
+    }
+    .profile-info p{
+      margin-top:2px;
+      font-size:11px;
+      color:#9ca3af;
+    }
+    .small-pill{
+      margin-top:6px;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      font-size:11px;
+      padding:3px 9px;
+      border-radius:999px;
+      border:1px solid rgba(148,163,184,0.7);
+      background:rgba(15,23,42,0.85);
+    }
+
+    .bio{
+      margin-top:12px;
+      font-size:13px;
+      line-height:1.6;
+    }
+    .bio span{
+      color:#38bdf8;
+      font-weight:600;
+    }
+
+    .stats-row{
+      margin-top:14px;
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+    }
+    .stat-box{
+      flex:1;
+      padding:8px 10px;
+      border-radius:16px;
+      background:linear-gradient(145deg,rgba(15,23,42,1),rgba(30,64,175,0.9));
+      border:1px solid rgba(51,65,85,0.9);
+    }
+    .stat-label{
+      font-size:11px;
+      color:#9ca3af;
+    }
+    .stat-value{
+      margin-top:4px;
+      font-size:16px;
+      font-weight:700;
+      color:#f9fafb;
+    }
+
+    .line{
+      margin:14px 0 10px;
+      height:1px;
+      background:linear-gradient(to right,transparent,rgba(148,163,184,0.6),transparent);
+    }
+
+    .cta-area{
+      text-align:center;
+      margin-top:6px;
+    }
+
+    .cta-btn{
+      position:relative;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:13px 28px;
+      border-radius:999px;
+      text-decoration:none;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-weight:800;
+      font-size:12px;
+      color:#020617;
+      background:linear-gradient(135deg,#27a7e7,#0ea5e9);
+      box-shadow:0 16px 42px rgba(56,189,248,0.9);
+      overflow:hidden;
+      cursor:pointer;
+      border:0;
+    }
+    .cta-btn::before{
+      content:"";
+      position:absolute;
+      inset:-1px;
+      border-radius:inherit;
+      border:1px solid rgba(255,255,255,0.7);
+      opacity:.9;
+    }
+
+    .cta-icon{font-size:18px;}
+
+    @keyframes blinkPulse{
+      0%,100%{transform:translateY(0) scale(1);box-shadow:0 0 0 0 rgba(56,189,248,0.15);}
+      50%{transform:translateY(-1px) scale(1.05);box-shadow:0 0 36px 10px rgba(56,189,248,0.9);}
+    }
+    .cta-btn{
+      animation:blinkPulse 1.25s infinite;
+    }
+
+    .cta-sub{
+      margin-top:7px;
+      font-size:11px;
+      color:#9ca3af;
+    }
+
+    .footer{
+      margin-top:14px;
+      font-size:10px;
+      color:#6b7280;
+      text-align:center;
+    }
+  </style>
+</head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1573821013753472');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1573821013753472&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<body>
+  <div class="wrap">
+    <div class="tg-head">
+      <div class="tg-head-left">
+        <div class="signal-dot"></div>
+        <span>Private cricket channel live</span>
+      </div>
+      <div class="tg-logo">
+        ✈
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="profile-row">
+        <div class="avatar-ring">
+          <div class="avatar"></div>
+        </div>
+        <div class="profile-info">
+          <h1>Allu Mahesh - South Indian™</h1>
+          <p>IPL 40/40 Match Pass • Private Channel</p>
+          <div class="small-pill">
+            <span>Well Expert Cricket Specialist</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="bio">
+        Join the same <span>47,399+ members</span> getting ultra-accurate IPL session tips,
+        40/40 match pass & premium cricket calls directly on Telegram.
+      </p>
+
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="stat-label">Subscribers</div>
+          <div class="stat-value">47,399+</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Administrators</div>
+          <div class="stat-value">5</div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="cta-area">
+        <!-- Final join link -->
+        <a href="https://t.me/+eQsmjYboPklmODI1"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="cta-btn">
+          <span class="cta-icon">✈</span>
+          JOIN TELEGRAM CHANNEL
+        </a>
+        <div class="cta-sub">Single tap • Opens directly inside Telegram app.</div>
+      </div>
+
+      <div class="footer">
+        For educational & entertainment purpose only. No financial guarantees.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
